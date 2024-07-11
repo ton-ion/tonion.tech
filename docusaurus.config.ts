@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Tonion',
-  tagline: 'reusable smart contract library and toolkit for the TON and Tact language',
+  tagline: 'Reusable smart contract library and toolkit for the TON and Tact language',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -87,7 +87,7 @@ const config: Config = {
           items: [
             {
               label: 'Documents',
-              to: '/docs/welcome',
+              to: '/docs/introduction',
             },
           ],
         },
