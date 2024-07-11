@@ -92,7 +92,7 @@ const config: Config = {
           ],
         },
         {
-          title: 'Community',
+          title: 'Communiti',
           items: [
             {
               label: 'Discord',
