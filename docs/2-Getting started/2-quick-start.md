@@ -10,24 +10,24 @@ Here we are going to implement a simple Jetton using the Tonion toolkit to get y
 
 In this quick guide we are going to use contract library of Tonion toolkit.
 
-First of all, you have to go to [Jetton](https://github.com/ton-ion/tonion-contracts/tree/main/contracts/traits/tokens/jetton) trait directory and download source code of both `JettonWallet.tact` and `JettonMaster.tact`, Alternatively you can get them using [Tonion CLI](https://github.com/ton-ion/tonion-cli).
+First of all, you have to go to [contracts/traits/tokens/Jetton](https://github.com/ton-ion/tonion-contracts/tree/main/contracts/traits/tokens/jetton) trait directory and clone source code of both `JettonWallet.tact` and `JettonMaster.tact`, Alternatively you can get them using [Tonion CLI](../5-CLI/index.md).
 
 ## Adding library to imports
 
-Once you had the source code of traits, you need to initialize your project using blueprint. Once you had your project ready, you can add it to `contracts/imports` directory (if you use Tonion CLI it will do it for you).
+Once you had the source code of traits, you need to initialize your project using [blueprint](https://github.com/ton-org/blueprint). Once you had your project ready, you can add it to `contracts/imports/tonion` directory (if you use Tonion CLI it will do it for you).
 
 ## Writing our own token
 
-We are going to call our token Testetton as example, so we create these files: `contracts/TestettonMater.tact` and  `contracts/TestettonWallet.tact`. then we continue them by adding the following code:
+We are going to call our token `TonionJetton` as example, so we create these files: `contracts/TonionJettonMater.tact` and  `contracts/TonionJettonWallet.tact`. then we continue them by adding the following code:
 
-contracts/TestettonMater.tact:
+contracts/TonionJettonMater.tact:
 
 ```ts
 import "@stdlib/deploy";
-import "../imports/JettonMaster.tact";
-import "../imports/JettonWallet.tact";
+import "../imports/tonion/JettonMaster.tact";
+import "../imports/tonion/JettonWallet.tact";
 
-contract TestettonMaster with JettonMaster, Deployable {
+contract TonionJettonMaster with JettonMaster, Deployable {
     total_supply: Int as coins;
     owner: Address;
     jetton_content: Cell;
@@ -41,20 +41,19 @@ contract TestettonMaster with JettonMaster, Deployable {
     }
 
     override inline fun calculate_jetton_wallet_init(owner_address: Address): StateInit {
-        return initOf TestettonWallet(owner_address, myAddress());
+        return initOf TonionJettonWallet(owner_address, myAddress());
     }
-
 }
 ```
 
-contracts/TestettonWallet.tact:
+contracts/TonionJettonWallet.tact:
 
 ```ts
 import "@stdlib/deploy";
 import "../imports/JettonMaster.tact";
 import "../imports/JettonWallet.tact";
 
-contract TestettonWallet with JettonWallet, Deployable {
+contract TonionJettonWallet with JettonWallet, Deployable {
     balance: Int as coins = 0;
     owner: Address;
     jetton_master: Address;
@@ -65,7 +64,7 @@ contract TestettonWallet with JettonWallet, Deployable {
     }
 
     override inline fun calculate_jetton_wallet_init(owner_address: Address): StateInit {
-        return initOf TestettonWallet(owner_address, self.jetton_master);
+        return initOf TonionJettonWallet(owner_address, self.jetton_master);
     }
 }
 ```
