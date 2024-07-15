@@ -1,41 +1,19 @@
-# Website
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+# Tonion Documentation
 
-### Installation
+Welcome to the official documentation for Tonion projects.
 
-```
-$ yarn
-```
+## About
 
-### Local Development
+Tonion provides comprehensive guides and examples for developers using the Tact language on the Ton blockchain.
 
-```
-$ yarn start
-```
+## Features
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+- **Guides**: Step-by-step tutorials for setup, deployment, and integration.
+- **Examples**: Real-world scenarios showcasing Tonion usage.
 
-### Build
+## Getting Started
 
-```
-$ yarn build
-```
+Explore different sections like guides, API references, and examples to find what you need. Contributions are welcome via GitHub.
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Visit [tonion.tech](https://tonion.tech) for more details.
