@@ -6,13 +6,13 @@ sidebar_position: 1
 
 The `Counter` trait provides a simple counter mechanism that can only be incremented or decremented by one. This can be useful for tracking the number of elements in a mapping, issuing NFT IDs, counting request IDs, and more.
 
-#### Properties
+## Properties
 
 - **Counter**: `Int`
   - Represents the current count. This variable should not be accessed directly by users of the library; interactions should be restricted to the library's functions.
   - **Default Value**: `0`
 
-#### Methods
+## Methods
 
 - **current() -> Int**
   - A getter function that returns the current value of the counter.
@@ -36,7 +36,7 @@ The `Counter` trait provides a simple counter mechanism that can only be increme
     self.decrement();
     ```
 
-### Usage Example
+## Usage Example
 
 To use the `Counter` trait in your smart contract, follow these steps:
 

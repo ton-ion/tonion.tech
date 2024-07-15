@@ -59,7 +59,7 @@ The `PaymentSplitter` trait provides a mechanism to split payments among a group
   - Returns the total number of shares assigned to all payees.
   - **Returns**: The total number of shares.
 
-#### Usage Example
+## Usage Example
 
 To use the `PaymentSplitter` trait in your smart contract, follow these steps:
 

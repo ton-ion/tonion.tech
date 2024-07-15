@@ -2,14 +2,14 @@
 
 The `AccessControl` trait provides a flexible and extensible role-based access control mechanism. It allows you to manage different roles and their respective permissions within a smart contract. Roles can be granted, revoked, or renounced by accounts, and specific functions can be restricted to certain roles.
 
-#### Properties
+## Properties
 
 - **_roles**: `map<Int, RoleData>`
   - A mapping from role identifiers to their corresponding `RoleData`.
 - **ADMIN_ROLE**: `Int`
   - A constant representing the administrator role. This is used as the default admin role for all roles.
 
-#### Structs
+## Structs
 
 - **RoleData**
   - **hasRole**: `map<Address, Bool>`
@@ -17,7 +17,7 @@ The `AccessControl` trait provides a flexible and extensible role-based access c
   - **adminRole**: `Int`
     - The role that has administrative privileges over this role.
 
-#### Messages
+## Messages
 
 - **GrantRoleMessage**
   - **role**: `Int`
@@ -43,7 +43,7 @@ The `AccessControl` trait provides a flexible and extensible role-based access c
   - **role**: `Int`
   - **account**: `Address`
 
-#### Methods
+## Methods
 
 - **_initRole(role: Int) -> Bool**
   - Initializes a role with an empty set of members and sets the admin role to `ADMIN_ROLE` if the role does not already exist.
@@ -111,7 +111,7 @@ The `AccessControl` trait provides a flexible and extensible role-based access c
     - `role`: The identifier of the role to check.
   - **Returns**: `Int` representing the admin role.
 
-#### Receive Handlers
+## Receive Handlers
 
 - **receive(msg: GrantRoleMessage)**
   - Handles messages to grant a role.
@@ -128,7 +128,7 @@ The `AccessControl` trait provides a flexible and extensible role-based access c
   - **Parameters**: 
     - `msg`: The `RenounceRoleMessage` containing the role and account.
 
-### Usage Example
+## Usage Example
 
 To use the `AccessControl` trait in your smart contract, follow these steps:
 

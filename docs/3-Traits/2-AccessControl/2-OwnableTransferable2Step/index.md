@@ -2,7 +2,7 @@
 
 The `OwnableTransferable2Step` trait extends the `Ownable` contract by adding a two-step mechanism for transferring ownership. This process ensures that the new owner explicitly accepts the ownership transfer, reducing the risk of accidental ownership transfers.
 
-#### Messages
+## Messages
 
 - **ChangeOwner2Step**
   - **pendingOwner**: `Address`
@@ -19,7 +19,7 @@ The `OwnableTransferable2Step` trait extends the `Ownable` contract by adding a 
 - **AcceptOwnership2Step**
   - Used by the pending owner to accept the ownership transfer.
 
-#### Properties
+## Properties
 
 - **owner**: `Address`
   - The current owner of the contract.
@@ -27,7 +27,7 @@ The `OwnableTransferable2Step` trait extends the `Ownable` contract by adding a 
 - **_pendingOwner**: `Address?`
   - The address of the pending owner who is set to accept ownership.
 
-#### Methods
+## Methods
 
 - **receive(msg: ChangeOwner2Step)**
   - Initiates the transfer of ownership to a new account.
@@ -64,7 +64,7 @@ The `OwnableTransferable2Step` trait extends the `Ownable` contract by adding a 
   - Returns the address of the pending owner.
   - **Returns**: `Address?` representing the pending owner.
 
-#### Usage Example
+## Usage Example
 
 To use the `OwnableTransferable2Step` trait in your smart contract, follow these steps:
 
