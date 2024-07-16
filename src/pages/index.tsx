@@ -83,7 +83,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
         title={`${siteConfig.title}`}
-        description="Tonion will go into a meta tag in <head />"
+        description="Reusable smart contract library and toolkit for the TON and Tact language."
       >
         <Head>
           <meta property="og:image" content="https://tonion.tech/img/banner.png" />
