@@ -82,20 +82,21 @@ export default function Home(): JSX.Element {
 
   return (
     <Layout
-      title={`${siteConfig.title}`}
-      description="Reusable smart contract library and toolkit for the TON and Tact language."
-    >
-       <Head>
-        <meta property="og:image" content="https://tonion.tech/img/Ton-logo-red.png" />
-        <meta property="og:image:type" content="image/jpeg" />
-        <meta property="og:image:width" content="200" />
-        <meta property="og:image:height" content="200" />
-      </Head>
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-        <HomepageSyntax {...syntaxData} />
-      </main>
-    </Layout>
+        title={`${siteConfig.title}`}
+        description="Tonion will go into a meta tag in <head />"
+      >
+        <Head>
+          <meta property="og:image" content="https://tonion.tech/img/banner.png" />
+          <meta property="og:image:type" content="image/jpeg" />
+          <meta property="og:image:width" content="200" />
+          <meta property="og:image:height" content="200" />
+          <link rel="icon" href="https://tonion.tech/img/docusaurus.png" sizes="20" />
+        </Head>
+        <HomepageHeader />
+        <main>
+          <HomepageFeatures />
+          <HomepageSyntax {...syntaxData} />
+        </main>
+      </Layout>
   );
 }
