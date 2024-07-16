@@ -4,8 +4,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 import tailwindPlugin from './tailwind-config.cjs';
 
 const config: Config = {
-  title: 'Build your next plugin with',
-  tagline: 'reusable smart contract library and toolkit for the TON and Tact language',
+  title: 'Tonion',
+  tagline: 'Reusable smart contract library and toolkit for the TON and Tact language',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -21,7 +21,7 @@ const config: Config = {
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenMarkdownLinks: 'throw',
 
   customFields: {
     title2: "Tonion"
@@ -61,9 +61,9 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/banner.jpg',
     navbar: {
-      title: 'Tonion',
+      // title: 'Tonion',
       logo: {
         alt: 'Tonion',
         src: 'img/logo.svg',
@@ -84,23 +84,35 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'dark',
+      style: 'light',
       links: [
         {
-          title: 'Docs',
+          title: 'Tutorials',
           items: [
             {
-              label: 'Documents',
-              to: '/docs/welcome',
+              label: 'Quick start',
+              to: '/docs/Getting%20started/quick-start',
+            },
+            {
+              label: 'Tonion CLI',
+              to: '/docs/CLI',
             },
           ],
         },
         {
-          title: 'Communiti',
+          title: 'Community',
           items: [
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discord.gg/xfF36fmUEU',
+            },
+            {
+              label: 'Telegram',
+              href: 'https://t.me/tonionDev',
+            },
+            {
+              label: 'Github',
+              href: 'https://github.com/ton-ion',
             },
             {
               label: 'Twitter',
@@ -113,16 +125,12 @@ const config: Config = {
           items: [
             {
               label: 'Blog',
-              to: '/',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              to: '/blog',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Dezh Technologies.`,
+      copyright: `<div>Powered by <a href="https://dezh.tech/">Dezh Technologies</a></div>❤️`,
     },
     prism: {
       theme: prismThemes.vsLight,
