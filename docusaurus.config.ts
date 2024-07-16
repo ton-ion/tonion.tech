@@ -21,7 +21,7 @@ const config: Config = {
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenMarkdownLinks: 'throw',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -58,9 +58,9 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/banner.jpg',
     navbar: {
-      title: 'Tonion',
+      // title: 'Tonion',
       logo: {
         alt: 'Tonion',
         src: 'img/logo.svg',
@@ -81,23 +81,35 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'dark',
+      style: 'light',
       links: [
         {
-          title: 'Docs',
+          title: 'Tutorials',
           items: [
             {
-              label: 'Documents',
-              to: '/docs/introduction',
+              label: 'Quick start',
+              to: '/docs/Getting%20started/quick-start',
+            },
+            {
+              label: 'Tonion CLI',
+              to: '/docs/CLI',
             },
           ],
         },
         {
-          title: 'Communiti',
+          title: 'Community',
           items: [
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discord.gg/xfF36fmUEU',
+            },
+            {
+              label: 'Telegram',
+              href: 'https://t.me/tonionDev',
+            },
+            {
+              label: 'Github',
+              href: 'https://github.com/ton-ion',
             },
             {
               label: 'Twitter',
@@ -110,16 +122,12 @@ const config: Config = {
           items: [
             {
               label: 'Blog',
-              to: '/',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              to: '/blog',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Dezh Technologies.`,
+      copyright: `<div>Powered by <a href="https://dezh.tech/">Dezh Technologies</a></div>❤️`,
     },
     prism: {
       theme: prismThemes.vsLight,
