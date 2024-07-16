@@ -10,7 +10,7 @@ Here we are going to implement a simple Jetton using the Tonion toolkit to get y
 
 In this quick guide we are going to use contract library of Tonion toolkit.
 
-First of all, you have to go to [contracts/traits/tokens/Jetton](https://github.com/ton-ion/tonion-contracts/tree/main/contracts/traits/tokens/jetton) trait directory and clone source code of both `JettonWallet.tact` and `JettonMaster.tact`, Alternatively you can get them using [Tonion CLI](../5-CLI/index.md).
+First of all, you have to go to [contracts/traits/tokens/Jetton](https://github.com/ton-ion/tonion-contracts/tree/main/contracts/traits/tokens/jetton) trait directory and clone source code of both `JettonWallet.tact` and `JettonMaster.tact`, Alternatively you can get them using [Tonion CLI](../4-CLI/index.md).
 
 ## Adding library to imports
 
