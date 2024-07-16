@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 import tailwindPlugin from './tailwind-config.cjs';
 
 const config: Config = {
-  title: 'Tonion',
+  title: 'Build your next plugin with',
   tagline: 'reusable smart contract library and toolkit for the TON and Tact language',
   favicon: 'img/favicon.ico',
 
@@ -23,6 +23,9 @@ const config: Config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
+  customFields: {
+    title2: "Tonion"
+  },
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".

@@ -1,0 +1,40 @@
+/* src/CodeDisplay.css */
+.code-display {
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: 'Fira Code', monospace;
+    color: #d4d4d4;
+}
+
+.code-display-header {
+    display: flex;
+    padding: 1em;
+    background-color: #efecfb;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.code-display-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 4px;
+}
+
+.code-display-dot.red {
+    background-color: #ff5f56;
+}
+
+.code-display-dot.yellow {
+    background-color: #ffbd2e;
+}
+
+.code-display-dot.green {
+    background-color: #27c93f;
+}
+
+.shadow {
+    -webkit-box-shadow: -1px 23px 26px 3px rgba(204, 204, 204, 1);
+    -moz-box-shadow: -1px 23px 26px 3px rgba(204, 204, 204, 1);
+    box-shadow: -1px 23px 26px 3px rgba(204, 204, 204, 1);
+}
