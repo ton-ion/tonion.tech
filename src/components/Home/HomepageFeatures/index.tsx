@@ -2,7 +2,9 @@ import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCode,faChartLine,faCube, IconDefinition } from '@fortawesome/free-solid-svg-icons';
+import { faCode,faChartLine,faCube, IconDefinition, faCodeCommit } from '@fortawesome/free-solid-svg-icons';
+import { faLock } from '@fortawesome/fontawesome-free-solid';
+import { faNpm } from '@fortawesome/free-brands-svg-icons';
 
 
 type FeatureItem = {
@@ -14,29 +16,29 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Expressive API',
+    title: 'Easy to use',
     Svg: faCode,
     description: (
       <>
-       You don't need to be an expert to use our plugin. Our expressive API is readable and well documented.
+       You don't need to be an expert to use Tonion toolkit. All fo our tools are readable and well documented.
       </>
     ),
   },
   {
-    title: 'Highly performant',
-    Svg: faChartLine,
+    title: 'Accessible from NPM (Soon)',
+    Svg: faNpm,
     description: (
       <>
-      You can make sure your website or app is highly performant with a <code>built-in</code>  system to help you optimize.
+      Tonion offers a robust CLI tool for managing/building Tact and TON projects. Tonion CLI is accessible from NPM.
       </>
     ),
   },
   {
-    title: 'No dependencies',
-    Svg: faCube,
+    title: 'Secure',
+    Svg: faLock,
     description: (
       <>
-       Our plugins do not have any external dependencies so our plugin has the minimal footprint possible.
+       All Tonion contract and tools are strongly tested on each change!
       </>
     ),
   },

@@ -34,7 +34,7 @@ function HomepageHeader() {
         <div
           className={clsx("flex gap-7 my-auto items-center", styles.buttons)}
         >
-          <Tag svg={faCopy} title="npm install -g ton" />
+          <Tag svg={faCopy} title="npm install -g tonion" />
 
           <Link
             className="button button--lg bg-secondary-700 rounded-[20px] text-white hover:text-secondary-50"
@@ -52,8 +52,8 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
 
   const syntaxData = {
-    title: 'Derive your API experience using efficient manner.',
-    description:'You can use this section to introduce your plugin with a sample code block on the right side. This will be a minimal implementation step.',
+    title: 'Invest in time, enjoy faster development.',
+    description:'The Tonion offers a set of pre-implemented, standard and tested implementation of commonly used contracts and traits ready for customize, so you can focus on main logic.',
     svg: faCopy,
     sampleCode:`
     import "../imports/tonion/JettonMaster.tact";
@@ -83,7 +83,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Tonion will go into a meta tag in <head />"
+      description="Reusable smart contract library and toolkit for the TON and Tact language."
     >
        <Head>
         <meta property="og:image" content="https://tonion.tech/img/Ton-logo-red.png" />

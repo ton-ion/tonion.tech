@@ -1,4 +1,3 @@
-
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconDefinition } from "@fortawesome/free-solid-svg-icons";
@@ -9,11 +8,8 @@ type TagItem = {
     title: string;
     svg?: IconDefinition;
     className?: string;
-  };
+};
   
-  
-  
-
 export default function Tag({title, svg, className}: TagItem) {
     return (
         <div className={clsx("flex justify-left items-left", className)}>
