@@ -18,6 +18,41 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+
+  --gray-50: #dfe3e5;
+  --gray-100: #bec7ca;
+  --gray-200: #9eaab0;
+  --gray-300: #7e8e95;
+  --gray-400: #627077;
+  --gray-500: #485358;
+  --gray-600: #3b4448;
+  --gray-700: #2f373a;
+  --gray-800: #24292b;
+  --gray-900: #181b1d;
+  --gray-950: #0c0e0e;
+
+  /* secondary */
+
+  --secondary-50: #fef2f2;
+  --secondary-100: #fee2e2;
+  --secondary-200: #fecaca;
+  --secondary-300: #fca5a5;
+  --secondary-400: #f87171;
+  --secondary-500: #ef4444;
+  --secondary-600: #dc2626;
+  --secondary-700: #b91c1c;
+  --secondary-800: #991b1b;
+  --secondary-900: #7f1d1d;
+  --secondary-950: #450a0a;
+
+  --additional-error: #ff0156;
+  /* --additional-error-light:#FCEBEB; */
+  --additional-success: #01ffaa;
+  --additional-warning: #ffaa01;
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -30,4 +65,36 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  --gray-950: #dfe3e5;
+  --gray-900: #bec7ca;
+  --gray-800: #9eaab0;
+  --gray-700: #7e8e95;
+  --gray-600: #627077;
+  --gray-500: #485358;
+  --gray-400: #3b4448;
+  --gray-300: #2f373a;
+  --gray-200: #24292b;
+  --gray-100: #181b1d;
+  --gray-50: #0c0e0e;
+
+  --secondary-950: #fef2f2;
+  --secondary-900: #fee2e2;
+  --secondary-800: #fecaca;
+  --secondary-700: #fca5a5;
+  --secondary-600: #f87171;
+  --secondary-500: #ef4444;
+  --secondary-400: #dc2626;
+  --secondary-300: #b91c1c;
+  --secondary-200: #991b1b;
+  --secondary-100: #7f1d1d;
+  --secondary-50: #450a0a;
+}
+
+.body {
+  background-color: #ECEEF2;
+}
+
+a:hover {
+  color: #ef4444 !important;
 }
