@@ -20,28 +20,25 @@ function HomepageHeader() {
     <header className={clsx("", styles.heroBanner)}>
       <div className="container">
         <img
-          src="img/Ton-logo-red.png"
-          className="rounded-full w-[65px]"
+          src="img/duck.png"
+          className="w-[200px]"
           alt="logo-ton"
         />
         <Heading
           as="h1"
-          className="hero__title text-gray-700 max-w-[500px] mx-auto"
+          className="hero__title text-secondary-700 max-w-[500px] mx-auto"
         >
           {siteConfig.title}
-          <span className="text-secondary-700 ml-1">
-            {siteConfig.customFields.title2}
-          </span>
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div
           className={clsx("flex gap-7 my-auto items-center", styles.buttons)}
         >
-          <Tag svg={faCopy} title="npm install -g ton" />
+          <Tag svg={faCopy} title="npm install -g tonion" />
 
           <Link
             className="button button--lg bg-secondary-700 rounded-[20px] text-white hover:text-secondary-50"
-            to="/docs/welcome"
+            to="/docs"
           >
             Documentation
           </Link>
@@ -55,36 +52,51 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
 
   const syntaxData = {
-    title: 'Derive your API experience using efficient manner.',
-    description:'You can use this section to introduce your plugin with a sample code block on the right side. This will be a minimal implementation step.',
+    title: 'Invest in time, enjoy faster development.',
+    description:'The Tonion offers a set of pre-implemented, standard and tested implementation of commonly used contracts and traits ready for customize, so you can focus on main logic.',
     svg: faCopy,
-    sampleCode:`import React from 'react';
-
-    const HelloWorld = () => {
-      return <div>Hello, World!</div>;
-    };
+    sampleCode:`
+    import "../imports/tonion/JettonMaster.tact";
+    import "../imports/tonion/JettonWallet.tact";
     
-    export default HelloWorld;`
+    contract TonionJettonMaster with JettonMaster {
+        total_supply: Int as coins;
+        owner: Address;
+        jetton_content: Cell;
+        mintable: Bool;
+        
+        init(owner: Address, content: Cell){
+            self.total_supply = 1000000;
+            self.owner = owner;
+            self.mintable = true;
+            self.jetton_content = content;
+        }
+    
+        override inline fun calculate_jetton_wallet_init(owner_address: Address): StateInit {
+            return initOf TonionJettonWallet(owner_address, myAddress());
+        }
+    }`
   };
 
   
 
   return (
     <Layout
-      title={`${siteConfig.title}`}
-      description="Tonion will go into a meta tag in <head />"
-    >
-       <Head>
-        <meta property="og:image" content="https://tonion.tech/img/Ton-logo-red.png" />
-        <meta property="og:image:type" content="image/jpeg" />
-        <meta property="og:image:width" content="200" />
-        <meta property="og:image:height" content="200" />
-      </Head>
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-        <HomepageSyntax {...syntaxData} />
-      </main>
-    </Layout>
+        title={`${siteConfig.title}`}
+        description="Reusable smart contract library and toolkit for the TON and Tact language."
+      >
+        <Head>
+          <meta property="og:image" content="https://tonion.tech/img/banner.png" />
+          <meta property="og:image:type" content="image/jpeg" />
+          <meta property="og:image:width" content="200" />
+          <meta property="og:image:height" content="200" />
+          <link rel="icon" href="https://tonion.tech/img/docusaurus.png" sizes="20" />
+        </Head>
+        <HomepageHeader />
+        <main>
+          <HomepageFeatures />
+          <HomepageSyntax {...syntaxData} />
+        </main>
+      </Layout>
   );
 }

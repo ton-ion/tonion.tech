@@ -18,10 +18,10 @@ export default function HomepageSyntax( props : SyntaxItem): JSX.Element {
       <div className="container w-full ">
         <div className="flex lg:flex-row flex-col">
           <div className='items-start lg:w-1/2 w-full'>
-            <Tag title='BEST PLUGIN EVER' className={'[&>div>span]:text-[13px] [&>div]:px-[13px] mb-4'}/>
+            <Tag title='DO NOT REPEAT YOUR SELF!' className={'[&>div>span]:text-[13px] [&>div]:px-[13px] mb-4'}/>
             <h2 className='text-gray-900'>{props.title}</h2>
             <p className='text-gray-500'>{props.description}</p>
-            <Link className={'text-secondary-500 underline flex my-auto items-center hover:!text-gray-900 w-fit'} href='/docs/welcome'>Read Docs 
+            <Link className={'text-secondary-500 underline flex my-auto items-center hover:!text-gray-900 w-fit'} href='/docs'>Read Docs
             <FontAwesomeIcon icon={faArrowRight} />
             </Link>
           </div>
@@ -29,7 +29,7 @@ export default function HomepageSyntax( props : SyntaxItem): JSX.Element {
         <div className="py-3 lg:w-1/2 w-full px-4">
           <CodeDisplay
             codeString={props.sampleCode}
-            language="javascript"
+            language="typescript"
             theme="dark"
           />
         </div>
