@@ -2,8 +2,7 @@ import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCode,faChartLine,faCube, IconDefinition, faCodeCommit } from '@fortawesome/free-solid-svg-icons';
-import { faLock } from '@fortawesome/fontawesome-free-solid';
+import { faCode,faLock,IconDefinition,  } from '@fortawesome/free-solid-svg-icons';
 import { faNpm } from '@fortawesome/free-brands-svg-icons';
 
 

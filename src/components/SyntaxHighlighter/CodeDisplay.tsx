@@ -13,7 +13,7 @@ const CodeDisplay = ({ codeString, language = 'javascript', theme = 'light' }) =
         <div className="code-display-dot yellow"></div>
         <div className="code-display-dot green"></div>
       </div>
-      <SyntaxHighlighter language={language} style={style} className="!my-0 rounded-t-none !bg-white  !mb-4">
+      <SyntaxHighlighter language={language} style={style} className="!my-0 rounded-t-none !bg-white  !mb-4 max-h-[300px] h-full">
         {codeString}
       </SyntaxHighlighter>
     </div>
