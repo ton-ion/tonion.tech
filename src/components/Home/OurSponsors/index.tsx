@@ -13,7 +13,7 @@ export default function OurSponsors(): JSX.Element {
     <div className="flex flex-wrap items-center justify-center gap-10 mt-2 md:justify-around">
     <div className='bg-secondary-100 rounded-full w-[100px] h-[100px] mb-5'>
       <a href="https://dezh.tech" target="_blank" >
-      <img src="https://pbs.twimg.com/profile_images/1774474942941114369/GsUxI4ZD_400x400.png" alt="Dezh Technologies" />
+      <img src="/img/usedBy/dezh.png" alt="Dezh Technologies" />
       </a>
       </div>
     </div>
