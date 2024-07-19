@@ -107,7 +107,7 @@ export default function Home(): JSX.Element {
         <div className="my-[32px]">
            <HomepageSyntax {...syntaxData}  />
         </div>
-       <HomepageFeatures2/>
+       {/* <HomepageFeatures2/> */}
        <OurSponsors/>
       </main>
     </Layout>

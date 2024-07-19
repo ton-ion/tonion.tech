@@ -35,7 +35,7 @@ export default function Tag(tag: TagItem) {
               delayHide={500}
               delayShow={100}
               place="top"
-              className="!rounded-2xl !text-sm !py-1 !px-2"
+              className="!rounded-xl !text-sm !py-1 !px-2"
               events={["click"]}
             >
               Copied!

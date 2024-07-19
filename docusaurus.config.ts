@@ -130,7 +130,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `<div>Powered by <a href="https://tonion.tech/">Tonion</a></div>`,
+      copyright: `<div>Powered by <a href="https://dezh.tech/">Dezh Technologies</a></div>❤️`,
     },
     prism: {
       theme: prismThemes.vsLight,
