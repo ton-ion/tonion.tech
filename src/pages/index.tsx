@@ -90,16 +90,20 @@ export default function Home(): JSX.Element {
         <title>TON Documentation - Reusable smart contract library</title>
         <meta
           property="og:title"
-          content="TON Documentation  - Reusable smart contract library"
-        ></meta>
+          content="TON Documentation - Reusable smart contract library"
+        />
+        <meta
+          property="og:description"
+          content="Reusable smart contract library and toolkit for the TON and Tact language."
+        />
         <meta
           property="og:image"
           content="https://tonion.tech/img/banner.png"
         />
         <meta property="og:image:type" content="image/jpeg" />
-        <meta property="og:image:width" content="200" />
-        <meta property="og:image:height" content="200" />
-        <meta name="smartContract" content="index, follow"></meta>
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="smartContract" content="index, follow" />
       </Head>
       <HomepageHeader />
       <main className="flex flex-col gap-10">
@@ -107,7 +111,7 @@ export default function Home(): JSX.Element {
         <div className="my-[32px]">
            <HomepageSyntax {...syntaxData}  />
         </div>
-       <HomepageFeatures2/>
+       {/* <HomepageFeatures2/> */}
        <OurSponsors/>
       </main>
     </Layout>

@@ -13,8 +13,8 @@ type TagItem = {
 
 export default function Tag(tag: TagItem) {
   return (
-    <div className={clsx("flex justify-left items-left pt-8 px-2 ", tag.className)}>
-      <div className="flex items-center gap-4  button button--lg bg-secondary-100 dark:text-secondary-900 text-secondary-700 rounded-[20px] hover:text-secondary-700">
+    <div className={clsx("flex justify-left items-left", tag.className)}>
+      <div className="flex items-center gap-4  button button--lg bg-secondary-100 dark:text-secondary-900  text-secondary-700 rounded-[20px] hover:text-secondary-700">
         <span className="my-auto text-left whitespace-nowrap overflow-hidden overflow-ellipsis ">
           {tag.title}
         </span>
