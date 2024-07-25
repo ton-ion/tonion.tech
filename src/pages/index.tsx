@@ -21,6 +21,7 @@ function HomepageHeader() {
     svg: faCopy,
     title: "npm install -g tonion",
     onClick: handleClick,
+    className:'w-full md:w-fit'
   };
   return (
     <header className={clsx("", styles.heroBanner)}>
@@ -34,12 +35,12 @@ function HomepageHeader() {
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div
-          className={clsx("flex gap-7 my-auto items-center", styles.buttons)}
+          className={clsx("flex md:flex-row flex-col gap-7 my-auto items-center", styles.buttons)}
         >
           <Tag {...tag} />
 
           <Link
-            className="button button--lg bg-secondary-700 rounded-[20px] text-white hover:!text-gray-950"
+            className="button button--lg bg-secondary-700 rounded-[20px] text-white hover:!text-gray-950 w-full md:w-fit"
             to="/docs"
           >
             Documentation

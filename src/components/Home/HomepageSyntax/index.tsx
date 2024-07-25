@@ -15,13 +15,13 @@ type SyntaxItem = {
 export default function HomepageSyntax( props : SyntaxItem): JSX.Element {
   return (
     <section >
-      <div className="container w-full ">
-        <div className="flex lg:flex-row flex-col bg-[#cd3234] rounded-lg">
+      <div className="container w-full">
+        <div className="flex lg:flex-row  py-7 flex-col bg-[#cd3234] rounded-lg">
           <div className='items-start lg:w-1/2 w-full  m-auto pl-7'>
             <Tag title='DO NOT REPEAT YOUR SELF!'  className={'[&>div>span]:text-[13px] [&>div]:px-[13px] mb-4'}/>
             <h1 className='text-white'>{props.title}</h1>
             <p className='text-white'>{props.description}</p>
-            <Link className={'text-gray-600 underline flex my-auto items-center hover:!text-gray-900 w-fit'} href='/docs'>Read Docs
+            <Link className={'text-gray-600 dark:text-gray-50 underline flex my-auto items-center hover:!text-gray-900 w-fit'} href='/docs'>Read Docs
             <FontAwesomeIcon icon={faArrowRight} />
             </Link>
           </div>
