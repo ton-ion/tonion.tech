@@ -7,13 +7,13 @@ const CodeDisplay = ({ codeString, language = 'javascript', theme = 'light' }) =
   const style = theme === 'dark' ? vsDark : vs;
 
   return (
-    <div className="code-display  w-full shadow bg-transparent">
+    <div className="code-display  w-full light:shadow bg-transparent">
       <div className="code-display-header">
         <div className="code-display-dot red"></div>
         <div className="code-display-dot yellow"></div>
         <div className="code-display-dot green"></div>
       </div>
-      <SyntaxHighlighter language={language} style={style} className="!my-0 rounded-t-none !bg-white  !mb-4 max-h-[300px] h-full">
+      <SyntaxHighlighter language={language} style={style} className="!my-0 rounded-t-none bg-white dark:!bg-gray-950  !mb-4 h-full">
         {codeString}
       </SyntaxHighlighter>
     </div>

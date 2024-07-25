@@ -16,23 +16,27 @@ export default function HomepageSyntax( props : SyntaxItem): JSX.Element {
   return (
     <section >
       <div className="container w-full ">
-        <div className="flex lg:flex-row flex-col">
-          <div className='items-start lg:w-1/2 w-full'>
+        <div className="flex lg:flex-row flex-col bg-[#cd3234] rounded-lg">
+          <div className='items-start lg:w-1/2 w-full  m-auto pl-7'>
             <Tag title='DO NOT REPEAT YOUR SELF!'  className={'[&>div>span]:text-[13px] [&>div]:px-[13px] mb-4'}/>
-            <h2 className='text-gray-900'>{props.title}</h2>
-            <p className='text-gray-500'>{props.description}</p>
-            <Link className={'text-secondary-500 underline flex my-auto items-center hover:!text-gray-900 w-fit'} href='/docs'>Read Docs
+            <h1 className='text-white'>{props.title}</h1>
+            <p className='text-white'>{props.description}</p>
+            <Link className={'text-gray-600 underline flex my-auto items-center hover:!text-gray-900 w-fit'} href='/docs'>Read Docs
             <FontAwesomeIcon icon={faArrowRight} />
             </Link>
           </div>
          
-        <div className="py-3 lg:w-1/2 w-full px-4">
+        <div className="py-3 lg:w-1/2 w-full px-4 bg-[#cd3234] rounded-lg">
+          <img src="/img/banner.png" className="w-full" alt="logo-ton" />
+        </div>
+       
+        </div> 
+        <div className="mt-[68px]  w-full ">
           <CodeDisplay
             codeString={props.sampleCode}
             language="typescript"
             theme="dark"
           />
-        </div>
         </div>
       </div>
     </section>

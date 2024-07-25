@@ -47,7 +47,7 @@ function Feature({title, Svg, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--left padding-horiz--md">
-        <div className='bg-secondary-100 rounded-full w-[50px] h-[50px] p-4 mb-5'>
+        <div className='bg-secondary-100 dark:bg-secondary-950 rounded-full w-[50px] h-[50px] p-4 mb-5'>
            <FontAwesomeIcon icon={Svg} className='text-secondary-600 size-5 '/>
         </div>
      

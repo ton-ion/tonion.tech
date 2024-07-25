@@ -28,7 +28,7 @@ function HomepageHeader() {
         <img src="img/duck.png" className="w-[120px]" alt="logo-ton" />
         <Heading
           as="h1"
-          className="hero__title text-secondary-700 max-w-[500px] mx-auto"
+          className="hero__title text-secondary-700 dark:text-secondary-950 max-w-[500px] mx-auto"
         >
           {siteConfig.title}
         </Heading>
