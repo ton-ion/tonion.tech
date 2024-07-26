@@ -38,3 +38,7 @@
     -moz-box-shadow: -1px 23px 26px 3px rgba(204, 204, 204, 1);
     box-shadow: -1px 23px 26px 3px rgba(204, 204, 204, 1);
 }
+
+.token {
+    background-color: transparent !important;
+}

@@ -74,7 +74,7 @@ function Feature({ title, Svg, description }: FeatureItem) {
     <div className={clsx("col col--6")}>
       <div className="text-center padding-horiz--md ">
         <div className="bg-secondary-100 rounded-full w-[50px] h-[50px] p-4 mb-5 ">
-          <FontAwesomeIcon icon={Svg} className="text-secondary-600 size-5 flex" />
+          <FontAwesomeIcon icon={Svg} className="ttext-secondary-600 dark:text-secondary-900 size-5" />
         </div>
 
         <Heading as="h3">{title}</Heading>
